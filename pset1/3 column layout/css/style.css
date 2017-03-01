@@ -27,13 +27,12 @@ header {
 	height: 70px;
 	text-align: center;
 	color: #4f889f;
-	padding: 1px;
+	padding-top: 40px;
 }
 
 .container div {
-	padding: 1%;
+	padding: 10px;
 	box-sizing: border-box;
-	min-height: 500px;
 }
 
 .left-col, .right-col {
@@ -47,7 +46,6 @@ header {
 }
 
 footer {
-	clear: both;
 	font-family: 'Amatica SC', cursive;
 	height: 50px;
 	background-color: skyblue;
