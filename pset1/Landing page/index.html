@@ -75,20 +75,35 @@
 			</div><!-- /info -->
 			
 			<div class="form">
-				<h1>Contact us!</h1>
-				<form class="form-container" action="#">
-					<input type="text" class ="text" name="text" value="Type here your name, please" class ="text"><br>
-					<input type="password" name="password" value="Type here your password, please" class ="text"><br>
-					<input type="email" name="email" value="Type here your email, please" class ="text"><br>
-					<input type="textarea" name="textarea" class ="text"></br>
-					<input type="radio" name="gender">Male
-					<input type="radio" name="gender">Female<br>
-					<select name="select">
-						<option>value 1</option>
-						<option>value 2</option>
-						<option>value 3</option>
-					</select></br>
-				</form>
+				<div class="wrapper-form">
+					<h1>Contact us!</h1>
+					<form class="form-submit"method="post" action="#" style="color: white;">
+						<input type="text" name="text" placeholder="Type here your name, please"><br>
+						<input type="password" name="password" placeholder="Type here your password, please"><br>
+						<input type="email" name="email" placeholder="Type here your email, please"><br>
+						<input type="usrtel" name="phone" placeholder="Type here your phone, please"><br>
+						<textarea name="message" placeholder="Type a little about you" rows="5" cols="25"></textarea><br>
+						<input type="date" name="bday"><br>
+						<input type="datetime-local" name="bdaytime"><br>
+						<input type="search" name="googlesearch" placeholder="Google search"><br>
+						Color<input type="color" name="favcolor"><br>
+						<input type="radio" name="gender">Male<br>
+						<input type="radio" name="gender">Female<br>
+						<select name="select">
+							<option>value 1</option>
+							<option>value 2</option>
+							<option>value 3</option>
+						</select></br>
+						Select a week<input type="week" name="year_week"><br>
+						Time<input type="time" name="usr_time"><br>
+						URL<input type="url" name="homepage"><br>
+						Quantity<input type="number" name="quantity" min="1" max="5"><br>
+						<input type="range" name="points" min="0" max="10"><br>
+						 <input type="checkbox" name="agree">Igree<br>
+						<input type="reset">
+						<input type="submit" value="Submit"><br>
+					</form>
+				</div>
 			</div>
 		</div>
 	</body>
