@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+<body>
+
+<div> <!-- task 1 -->
+    <h2>task 1</h2>
+    <p><strong>Sum of numbers from -1000 to 1000</strong></p>
+    <p id="task1"></p>
+    <hr>
+</div>
+
+<div> <!-- task 2 -->
+    <h2>task 2</h2>
+    <p><strong>Sum of numbers from -1000 to 1000 if the number ends at 2, 3, 7</strong></p>
+    <p id="task2"></p>
+    <hr>
+</div>
+
+<div> <!-- task 3 -->
+    <h2>task 3</h2>
+    <p><strong>Tree of symbols</strong></p>
+    <pre id="task3"></pre>
+    <hr>
+</div>
+
+<div> <!-- task 4 -->
+    <h2>task 4</h2>
+    <p><strong>Time converter</strong></p>
+    Enter time: <input type="number" pattern="[0-9]" id="seconds"><br>
+    <button onclick="printResult($('task4'), task4($('seconds').value))">
+        Task4
+    </button>
+    <p id="task4"></p>
+    <hr>
+</div>
+
+<div> <!-- task 5 -->
+    <h2>task 5</h2>
+    <p><strong>age</strong></p>
+    Enter your age: <input type="number" pattern="[0-9]" id="age"><br>
+    <button onclick="printResult($('task5'), task5($('age').value))">
+        Task5
+    </button>
+    <p id="task5"></p>
+    <hr>
+</div>
+
+<div> <!-- task 6 -->
+    <h2>task 6</h2>
+    Enter the first date: <input type="datetime-local" id="firstDate" value="1970-01-01T00:00:00" step="1"><br>
+    Enter the second date: <input type="datetime-local" id="secondDate" value="1970-01-01T00:00:01" step="1"><br>
+    <button onclick="printResult($('task6'), task6(firstDate.value, secondDate.value))">
+        Task6
+    </button>
+    <p id="task6"></p>
+    <hr>
+</div>
+
+<div> <!-- task 7 -->
+    <h2>task 7</h2>
+    Enter the date: <input type="date" id="date"><br>
+    <button onclick="printResult($('task7'), task7($('date').value))">
+        Task7
+    </button>
+    <p id="task7"></p>
+    <hr>
+</div>
+
+<div> <!-- task 8 -->
+    <h2>task 8</h2>
+    Enter the first dimension: <input id="firstDimension" pattern="^[0-9]" type="number" min="2"><br>
+    Enter the second dimension: <input id="secondDimension" pattern="^[0-9]" type="number" min="2"><br>
+    <button onclick="printResult($('task8'), task8(firstDimension.value, secondDimension.value))">
+        Task 8
+    </button>
+    <p id="task8"></p>
+    <hr>
+</div>
+
+<div> <!-- task 9 -->
+    <h2>task 9</h2>
+    Enter the number of entrances: <input type="number" pattern="^[0-9]" min="0" id="entrances"><br>
+    Enter the number of floors: <input type="number" min="0" pattern="^[0-9]" id="floors"><br>
+    Enter the number of apartments on the floor: <input type="number" min="0" pattern="^[0-9]" id="apartmentsOnTheFloor"><br>
+    Enter the apartment's number: <input type="number" min="0" pattern="^[0-9]" id="numberApartment"><br>
+    <button onclick="printResult($('task9'), task9(entrances.value, floors.value, apartmentsOnTheFloor.value, numberApartment.value))">
+        Task9
+    </button>
+    <p id="task9"></p>
+    <hr>
+</div>
+
+<div> <!-- task 10 -->
+    <h2>task 10</h2>
+    <p><strong>sum of number</strong></p>
+    Enter the number: <input type="number" pattern="^[0-9]" id="number"><br>
+    <button onclick="printResult($('task10'), task10($('number').value))">
+        Task10
+    </button>
+    <p id="task10"></p>
+    <hr>
+</div>
+
+<div> <!-- task 11 -->
+    <h2>task 11</h2>
+    <p>Enter the links</p>
+    <!-- Doesn't work. IDK how fix it -->
+    <!--<textarea rows="4" cols="50" id="inputData" onchange="printResult($('task11'), task11($('inputData').value))"></textarea>-->
+    <textarea rows="4" cols="50" id="inputData" onchange="task11()"></textarea>
+    <p id="task11"></p>
+</div>
+
+<script src="task1.js"></script>
+</body>
+</html>
