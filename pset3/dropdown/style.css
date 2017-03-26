@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: skyblue;
+    padding: 10px 0;
+    margin: 10px auto;
+    width: 200px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+nav li ul {
+    background-color: skyblue;
+}
+
+nav li li {
+    position: relative;
+    margin: 0;
+    display: block;
+}
+
+nav a {
+    line-height: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+nav li li a:hover {
+    background-color: aqua;
+}
+
+ul.sub-menu {
+    display: none;
+}
