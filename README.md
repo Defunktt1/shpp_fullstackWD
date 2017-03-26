@@ -1,1 +1,1 @@
-Shpp fullstack web cource
+Shpp fullstack web course
