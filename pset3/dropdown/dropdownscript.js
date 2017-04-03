@@ -1,10 +1,9 @@
 $(document).ready(function () {
 
-    var drop = $(".dropdown > a:first");
     var sub = $(".sub-menu");
     var subList = $(".sub-menu > li > a");
 
-    drop.click(function () {
+    $(".dropdown > a:first").click(function () {
         subList.show();
         sub.stop(true, true).toggle();
     });
@@ -12,7 +11,7 @@ $(document).ready(function () {
     subList.on("click", function () {
         subList.hide();
         var subListText = $(this).text();
-        var mainText = $(".dropdown > a:first")
+        var mainText = $(".dropdown > a:first");
         mainText.text(subListText);
     });
 

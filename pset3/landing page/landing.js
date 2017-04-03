@@ -1,16 +1,17 @@
 $(document).ready(function () {
 
+    var up = $('.up');
     var offset = 300;
     var duration = 500;
     $(window).scroll(function () {
         if ($(this).scrollTop() >= offset) {
-            $('.up').fadeIn(duration);
+            up.fadeIn(duration);
         } else {
-            $('.up').fadeOut(duration);
+            up.fadeOut(duration);
         }
     });
 
-    $('.up').click(function (event) {
+    up.click(function (event) {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0}, duration);
         return false;
