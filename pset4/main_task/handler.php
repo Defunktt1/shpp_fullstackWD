@@ -3,7 +3,7 @@
 $lang = "";
 
 if (!isset($_POST["lang"])) {
-    die("ERROR! Provide your input!");
+    die("Wrong input!");
 } else {
     $lang = $_POST["lang"];
 }
@@ -26,6 +26,6 @@ header('Content-Type: application/json');
 echo $jsonData;
 
 if (isset($_POST['submit'])) {
-    header('Location: chart.php');
+    header('Location: chart.html');
 }
 

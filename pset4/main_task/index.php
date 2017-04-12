@@ -6,28 +6,24 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        .error {
-            color: #FF0000;
-        }
-
-        label {
-            display: block;;
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
 
-<form action="handler.php" method="post">
+<form action="handler.php" method="POST">
     <fieldset>
-        <legend>Poll of developer's opinion</legend>
-        <h3>What is your favourite programming language?</h3>
-        <label for="scratch"><input type="radio" id="scratch" name="lang" value="scratch">Scratch</label>
-        <label for="pascal"><input type="radio" id="pascal" name="lang" value="pascal">Pascal</label>
-        <label for="haskell"><input type="radio" id="haskell" name="lang" value="haskell">Haskell</label>
-        <label for="lisp"><input type="radio" id="lisp" name="lang" value="lisp">Lisp</label>
-        <label for="cobol"><input type="radio" id="cobol" name="lang" value="cobol">COBOL</label>
+        <h3>How old are you?</h3>
+        <label for="1"><input type="radio" id="1" name="lang" value="0-16">0-16</label>
+        <hr>
+        <label for="2"><input type="radio" id="2" name="lang" value="17-23">17-23</label>
+        <hr>
+        <label for="3"><input type="radio" id="3" name="lang" value="24-32">24-32</label>
+        <hr>
+        <label for="4"><input type="radio" id="4" name="lang" value="33-45">33-45</label>
+        <hr>
+        <label for="5"><input type="radio" id="5" name="lang" value="46-60">46-60</label>
+        <hr>
+        <label for="6"><input type="radio" id="6" name="lang" value="61-more">61-more</label>
+        <hr>
         <input type="submit" name="submit" value="Submit">
     </fieldset>
 </form>
