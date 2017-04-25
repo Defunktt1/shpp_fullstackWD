@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pie chart</title>
 </head>
+<body>
 
 <div id="chartDiv"></div>
 
@@ -18,14 +19,19 @@
      google.charts.setOnLoadCallback(drawChart);
 
      function drawChart() {
-          $.get("data.json", "", function(data) {
-              var key;
-              var table = [];
-              for (key in data) {
-                  table.push([key, data[key]]);
-              }
-              renderData(table);
-          });
+         $.ajax({
+             url: "data.json",
+             dataType: 'json',
+             success: function(data) {
+                 var key;
+                 var table = [];
+
+                 for (key in data) {
+                     table.push([key, data[key]]);
+                 }
+                 renderData(table);
+             }
+         });
 
           function renderData(getData) {
               var data = new google.visualization.DataTable();

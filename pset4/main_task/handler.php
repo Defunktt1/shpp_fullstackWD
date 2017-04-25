@@ -19,13 +19,13 @@ if(file_exists($fileTxt)) {
 
 (isset($arrData[$lang])) ? $arrData[$lang] ++ : $arrData[$lang] = 1;
 
-$jsonData = json_encode($arrData, JSON_PRETTY_PRINT);
+$jsonData = json_encode($arrData);
 file_put_contents('data.json', $jsonData);
 
 header('Content-Type: application/json');
 echo $jsonData;
 
 if (isset($_POST['submit'])) {
-    header('Location: chart.html');
+    header('Location: chart.php');
 }
 
