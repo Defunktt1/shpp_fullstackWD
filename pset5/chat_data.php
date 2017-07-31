@@ -23,7 +23,7 @@ if (isset($_POST['msg']) && isset($_POST['ts']) && !empty($_SESSION['username'])
     }
 
     $arrData[] = $messageData;
-    $jsonData = json_encode($arrData);
+    $jsonData = json_encode($arrData, JSON_PRETTY_PRINT);
     file_put_contents($messages, $jsonData);
     header('Content-Type: application/json');
     echo $jsonData;

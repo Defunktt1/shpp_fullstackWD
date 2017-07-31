@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $arr[$name] = $password;
         $_SESSION['username'] = $name;
-        $data = json_encode($arr, true);
+        $data = json_encode($arr, JSON_PRETTY_PRINT);
         file_put_contents($jsonFile, $data);
         header('Location: chat.php');
     }
