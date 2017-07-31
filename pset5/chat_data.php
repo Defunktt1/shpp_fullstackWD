@@ -11,8 +11,8 @@ if (isset($_POST['msg']) && isset($_POST['ts']) && !empty($_SESSION['username'])
     $message = $_POST['msg'];
     $time = $_POST['ts'];
     $username = $_SESSION['username'];
-    $message = str_replace(":)", '<img src="smiles/smile.png">', $message);
-    $message = str_replace(":(", '<img src="smiles/sad.png">', $message);
+    $message = str_replace(":)", '&#9786', $message);
+    $message = str_replace(":(", '&#9785', $message);
     $messageData = ['time' => $time, 'user' => $username, 'message' => $message];
 
     $jsonData = [];
