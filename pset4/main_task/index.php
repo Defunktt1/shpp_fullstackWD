@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Chart</title>
 </head>
 <body>
 
@@ -24,7 +24,12 @@
         <hr>
         <label for="6"><input type="radio" id="6" name="lang" value="61-more">61-more</label>
         <hr>
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="submit" value="Submit"><br><br>
+        <?php
+        if ($_GET["msg"]) {
+            echo $_GET["msg"];
+        }
+        ?>
     </fieldset>
 </form>
 

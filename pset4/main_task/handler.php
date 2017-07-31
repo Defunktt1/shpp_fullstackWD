@@ -3,7 +3,8 @@
 $lang = "";
 
 if (!isset($_POST["lang"])) {
-    die("Wrong input!");
+    header('Location: index.php?msg=Please, choose your age');
+    die();
 } else {
     $lang = $_POST["lang"];
 }
@@ -19,7 +20,7 @@ if(file_exists($fileTxt)) {
 
 (isset($arrData[$lang])) ? $arrData[$lang] ++ : $arrData[$lang] = 1;
 
-$jsonData = json_encode($arrData);
+$jsonData = json_encode($arrData, JSON_PRETTY_PRINT);
 file_put_contents('data.json', $jsonData);
 
 header('Content-Type: application/json');
