@@ -1,0 +1,77 @@
+body {
+    background: #b9c783;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.logout {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 40px;
+}
+
+.container .welcome {
+    margin: 0 auto;
+}
+
+.container .welcome .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 57px;
+    color: #fffecd;
+}
+
+.container .welcome .username {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-bottom: 50px;
+    color: #635960;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container .chat-window {
+    margin: 0 auto;
+    height: 300px;
+    width: 550px;
+    background-color: #fffecd;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.chat-window {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.wrapper-message_chat form {
+    width: 555px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 440px;
+    height: 35px;
+    background: #fffecd;
+    border: none;
+    padding-left: 5px;
+}
+
+input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 100px;
+    height: 37px;
+    background: #635960;
+    color: #fffecd;
+    border: none;
+}
