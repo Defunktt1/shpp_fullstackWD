@@ -1,3 +1,7 @@
 {
-    "root": "123123"
+    "root": {
+        "id": 1,
+        "username": "root",
+        "password": "123123"
+    }
 }

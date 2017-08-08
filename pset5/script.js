@@ -1,12 +1,12 @@
 const ONE_HOUR = 3600000;
 lastMsgTimestamp = 0;
-
 $(document).ready(function () {
 
     historyLoad();
 
     $("#message_submit_button").click(function (e) {
         e.preventDefault();
+
         var currentTime = new Date();
         $.post("chat_data.php", {ts: currentTime.getTime(), msg: $("#message").val()},
             function (data) {

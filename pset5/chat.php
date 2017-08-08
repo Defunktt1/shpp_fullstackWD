@@ -1,14 +1,20 @@
 <?php
+
 session_start();
+
+if(!$_SESSION['username']){
+    header('Location: index.php');
+}
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="chatstyle.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styles/chatstyle.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <title>Chat</title>
 </head>
@@ -44,4 +50,5 @@ session_start();
 <script src="script.js"></script>
 
 </body>
+
 </html>

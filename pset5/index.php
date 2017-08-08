@@ -7,9 +7,9 @@ session_start();
 
 <head>
     <title>Chat</title>
-    <link rel="stylesheet" type="text/css" href="indexstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/indexstyle.css">
 </head>
 
 <body>
