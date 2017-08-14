@@ -14,9 +14,8 @@ $(document).ready(function () {
 
 function updateMsg() {
     $.post("chat_data.php", {id: lastId}, function (data) {
-        var key;
         var table = [];
-        for (key in data) {
+        for (var key in data) {
             table.push([data[key].time, data[key].user_name, data[key].message_text]);
             lastId = parseInt(data[key].message_id);
         }
@@ -25,6 +24,8 @@ function updateMsg() {
             table[i][0] = '[' + table[i][0] + ']';
             table[i][1] = '<b>' + table[i][1] + '</b>' + ": ";
             table[i] = table[i].join(" ") + '<br /><br />';
+            table[i] = table[i].replace(":)", "&#9786");
+            table[i] = table[i].replace(":(", "&#9785");
         }
 
         var chat = $(".chat-window");
